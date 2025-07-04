@@ -7,7 +7,7 @@ from model.predictor import predict
 from utils.transform import preprocess_image
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://relaxed-hotteok-6aa113.netlify.app"])
 model = load_model()
 
 def allowed_file(filename):
