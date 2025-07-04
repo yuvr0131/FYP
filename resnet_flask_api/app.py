@@ -2,9 +2,9 @@ from flask import Flask, request, jsonify
 import os
 from flask_cors import CORS 
 from config import UPLOAD_FOLDER, ALLOWED_EXTENSIONS
-from model.loader import load_model
-from model.predictor import predict
-from utils.transform import preprocess_image
+from resnet_flask_api.model.loader import load_model
+from resnet_flask_api.model.predictor import predict
+from resnet_flask_api.utils.transform import preprocess_image
 
 app = Flask(__name__)
 CORS(app)
