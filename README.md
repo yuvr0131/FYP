@@ -1,23 +1,37 @@
+🚀 Project Update: End-to-End Breast Cancer Detection System
+🔬 Machine Learning + Deep Learning | 🧠 ResNet50 | 🌐 Flask API + React UI | 🏥 Ultrasound Image Dataset
 
+Thrilled to share a full-stack AI project where I built a breast cancer classification system (Benign vs Malignant) using ultrasound scans of breast tissue:
 
-Breast cancer remains one of the leading causes of mortality among women worldwide, highlighting the critical need for early and precise diagnostic systems. 
-This research proposes a systematic approach for breast cancer prediction using segmented breast ultrasound images, leveraging both traditional machine learning and advanced deep learning models. 
-The dataset employed comprises 780 annotated ultrasound images collected from 600 female patients aged between 25 and 75 years.
-These images, provided in PNG format with an average resolution of 500×500 pixels, were organized in 2018 and categorized into three classes: normal, benign, and malignant,
-with corresponding ground truth labels.
+✅ Model Training (Colab)
 
-A robust preprocessing pipeline was implemented to enhance the quality and relevance of features extracted from the images. 
-Initially, Anisotropic Diffusion Filtering was applied to reduce speckle noise while preserving crucial edge details.
-This was followed by image segmentation, which isolated regions of interest (ROIs) within the ultrasound scans. 
-Data augmentation techniques, such as rotation, flipping, and zooming, were employed to synthetically expand the dataset and 
-address class imbalance, thereby improving model generalization. Subsequently, bounding box extraction was performed to tightly enclose lesion areas, 
-facilitating localized analysis. In the next stage, feature extraction was conducted using handcrafted and automated techniques to derive meaningful descriptors from the ROIs. 
-Important features were then identified and selected through statistical and algorithmic methods for training robust classification models.
+Trained on a large dataset of breast ultrasound images using Google Colab, applying both machine learning techniques and a ResNet50 deep learning model for robust feature extraction.
 
-The predictive analysis involved four machine learning algorithms: Support Vector Machine (SVM), Logistic Regression, Random Forest, and XGBoost,
-alongside two deep learning architectures: a custom Convolutional Neural Network (CNN) and ResNet50. Among these, ResNet50 demonstrated the highest performance, 
-showcasing its effectiveness in capturing complex patterns in medical imaging data. The models were evaluated using metrics such as 
-accuracy, precision, recall, F1-score, and Receiver Operating Characteristic (ROC) curves, providing a comprehensive comparison of their predictive capabilities.
+Used PyTorch, image preprocessing, and evaluation pipelines for accurate predictions.
 
-This integrated framework combining classical and deep learning techniques on preprocessed ultrasound images demonstrates promising 
-potential for enhancing breast cancer diagnosis and aiding radiologists in clinical decision-making. 
+✅ Backend Development
+
+Created a Flask-based REST API to serve the model.
+
+Enabled CORS to connect with frontend and used Render for deployment.
+
+API accepts image input and returns real-time classification (benign/malignant).
+
+✅ Frontend (React + Vite)
+
+Built an intuitive React + TypeScript interface to upload images and show results.
+
+Deployed on Netlify.
+
+🔗 Live Demo: [your Netlify link]
+💻 GitHub: [your GitHub repo link]
+
+📌 Tech Stack: Python, PyTorch, Flask, React, Vite, Render, Netlify, Google Colab, REST API, ML/DL
+
+This project strengthened my understanding of:
+🔹 Model training in the cloud (Colab)
+🔹 Deep Learning + Medical Imaging
+🔹 Full-stack AI deployment
+
+#MachineLearning #DeepLearning #FullStackDevelopment #GoogleColab #FlaskAPI #ReactJS #BreastCancerDetection #ResNet50 #PyTorch #MedicalImaging #Render #Netlify #ProjectShowcase
+
